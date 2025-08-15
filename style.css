@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+body {
+    background: #001722;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo {
+    font-size: 35px;
+    color: #E5E5E5;
+    text-decoration: none;
+    font-weight: 800;
+}
+.navbar a {
+    border-radius: 5px;
+    color: #ede9e9;  ;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 35px;
+    transition: .3s;
+    text-decoration: none;
+}
+.navbar a:hover,
+.navbar a.active {
+    color: royalblue;
+}
+
+.home{
+    align-items: center;
+    background-image: url(Web/1.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+    margin-top: 100px;
+   
+}
+.home-content{
+    max-width: 700px;
+}
+.home-content h1{
+    color: #ededed;
+    font-size: 66px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1.2;
+}
+.home-content h3{
+    font-size: 42px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #00abf0;
+}
+
+.home-content p{
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    margin: 20px 0 40px;
+    
+}
+.home-content .btn-1{
+    width: 345PX;
+    height: 50PX;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-1 a{
+    position: relative;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 3px solid #00abf0;
+    border-radius: 14px;
+    color: #081b29;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn-1 a:nth-child(2){
+    color: #00abf0;
+    background: transparent;
+    margin-left: 20px;
+}
+.btn-1 a:nth-child(2):{
+    color: #00abf0;
+}
+.btn-1 a:hover{
+    background: black;
+    color: #00abf0;
+    transition: .5s;
+}
