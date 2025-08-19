@@ -463,10 +463,31 @@ margin-top: 200px;
     height: 100vh;
     display: flex;
     align-items: center;
-    background-size: 1000px 800px;
+    background-size: 1190px 600px;
     margin-top: 100px;
    background-position: left 70px top 70px;
    padding: 0 7%;
+}
+#team h1{
+    color: #e5e5e5;
+    text-align: center;
+    font-size: 36px;
+    margin-top: -600px;
+    margin-bottom: 15px;
+    position: relative;
+    font-weight: 600;
+    margin-left: 400px;
+}
+#team h1:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translatex(-50%);
+    width: 270px;
+    height: 5px;
+    background-color: royalblue;
+    
 }
 
 
