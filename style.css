@@ -13,12 +13,13 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 10%;
-    background: transparent;
+    padding: 20px 10%;
+    background: #00102F;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    height: 100PX;
 
 }
 
@@ -30,12 +31,13 @@ body {
 }
 .navbar a {
     border-radius: 5px;
-    color: #ede9e9;  ;
+    color: #ede9e9;
     font-size: 18px;
     font-weight: 700;
     margin-left: 35px;
     transition: .3s;
     text-decoration: none;
+    padding: 10px 20px;
 }
 .navbar a:hover,
 .navbar a.active {
@@ -47,7 +49,6 @@ body {
     background: url("img/Coding.png") no-repeat;
     background-size: 600px 800px;
     background-position: left 750px top 70px;
-    background-attachment: fixed;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -110,7 +111,7 @@ body {
     margin-left: 20px;
 }
 .btn-1 a:nth-child(2):{
-    color: #00abf0;
+    color: green;
 }
 .btn-1 a:hover{
     background: #14213d;
@@ -149,7 +150,7 @@ body {
     left: 0;
     width:0;
     height: 100%;
-    background: #e5e5e5;
+    background: black;
     border-radius: 50%;
     z-index: -1;
     transition: .5s;
@@ -159,3 +160,407 @@ body {
     color: gold;
     width: 100%;
 }
+.services{
+margin-top: 200px;
+
+}
+.b-1{
+    display: flex;
+    padding: 10px 30px;
+    width: 100%;
+    height: 300px;
+    gap: 100px;
+    
+}
+.box-1{
+    background-color: #e5e5e5;
+    height: 320px;
+    width: 560px;
+    gap: 100px;
+    border-radius: 10px;
+}
+.box-1  img{
+    margin-left: 120px;
+}
+.box-2  img{
+    margin-left: 120px;
+}
+.box-3  img{
+    margin-left: 120px;
+}
+.box-2{
+    background-color: #e5e5e5;
+    height: 320px;
+    width: 560px;
+    border-radius: 10px;
+
+}
+
+.box-1 h3{
+    color: royalblue;
+    margin-left: 80px;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: -20px;
+}
+.box-2 h3{
+    color: royalblue;
+    margin-left: 80px;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: -20px;
+}
+.box-3 h3{
+    color: royalblue;
+    margin-left: 80px;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: -20px;
+}
+.box-1 p{
+    color: black;
+    margin: auto;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.box-2 p{
+    color: black;
+    margin: auto;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.box-3 p{
+    color: black;
+    margin: auto;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+.box-3{
+    background-color: #e5e5e5;
+    height: 320px;
+    width: 560px;
+    border-radius: 10px;
+}
+.services h1{
+    color: #e5e5e5;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    position: relative;
+    font-weight: 600;
+}
+.services h1:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translatex(-50%);
+    width: 150px;
+    height: 5px;
+    background-color: royalblue;
+    margin-top: 900PX;
+}
+.box-1 a{
+     
+    width: 150px;
+    height: 40px;
+    background: #14213d;
+    border:none;
+    border-radius: 5px;
+    color: royalblue;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-top: 19px;
+    margin-left: 80px;
+}
+.box-2 a{
+     
+    width: 150px;
+    height: 40px;
+    background: #14213d;
+    border:none;
+    border-radius: 5px;
+    color: royalblue;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-top: 19px;
+    margin-left: 80px;
+}
+.box-3 a{
+     
+    width: 150px;
+    height: 40px;
+    background: #14213d;
+    border:none;
+    border-radius: 5px;
+    color: royalblue;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-top: 19px;
+    margin-left: 80px;
+}
+
+
+.about-1{
+    align-items: center;
+    background: url("img/Coding workshop-pana.png") no-repeat;
+    background-size: 600px 800px;
+    background-position: left 750px top 70px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+    margin-top: 100px;
+   
+}
+.about-1 h1{
+    color: #ededed;
+    font-size: 60px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 1.2;
+    margin-top: 300px;
+}
+
+
+.about-1 p{
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    margin: 20px 5px 40px;
+   
+    
+}
+.home-content{
+    max-width: 700px;
+}
+
+
+.explore_container h2{
+    margin-bottom: 2rem; 
+    color: #fca311;
+    margin-inline: auto;
+    line-height: 2rem;
+    text-align: center;
+    max-width: 600;
+    font-size: 2.5rem;
+}
+.explore_container p{
+    color: #e5e5e5;
+    text-align: center;
+    font-size: 2rem;
+}
+.explore-grid{
+    margin-block: 4rem;
+    display: grid;
+    gap: 5rem;
+}
+.explore-card{
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px royalblue;
+    transition: 1s;
+}
+.explore-card:hover{
+    background-color: #14213d;
+
+}
+.explore-card span{
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 5px 11px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    border-radius: 10px;
+
+}
+.explore-card img{
+    border-radius: 15px;
+}
+.explore-card:hover span{
+    color: #fca311;
+    background-color: #14213d;
+
+}
+.explore-card h4{
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fca311;
+    transition: 3s; 
+}
+.explore-card p{
+    color: #e5e5e5;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+.explore-card:hover p{
+    color: gold;
+
+}
+.explore-btn{
+    text-align: center;
+    padding: 4rem 1rem;
+}
+.explore-btn button{
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #14213d;
+    background-color: #fca311;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.explore-grid{
+    grid-template-columns: repeat(4, 1fr);
+}
+@media (width >1024px){
+    .steps_card{
+        padding: 1.5rem;
+    }
+}
+.explore-card {
+    padding: 1.5rem;
+    margin-left: 20px;
+
+}
+.explore_container{
+    margin-top: 100px;
+}
+
+.explore-img{
+    margin-top: -40px;
+    display: flex;
+    gap: 2rem;
+    margin-left: 100px;
+    
+}
+#team{
+    align-items: center;
+    background: url("img/Best HR Outsourcing Companies in Pakistan.jpeg") no-repeat;
+   
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: 1000px 800px;
+    margin-top: 100px;
+   background-position: left 70px top 70px;
+   padding: 0 7%;
+}
+
+
+
+/*footer*/
+footer{
+    background: #e5e5e5;
+    padding-top: 50px;
+    margin-top: 300px;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer-content{
+    width: 34%;
+}
+h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    
+}
+.footer-content p{
+    width: 360px;
+    margin: auto;
+    padding: 5px;
+}
+.footer-content ul{
+    text-align: center;
+}
+.list li{
+    width: 100px;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+    
+}
+.list li::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 90%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition-duration: 5s;
+}
+.list li:hover::before{
+    width: 70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+    margin-left: -170px;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    margin: 10 -10px;
+}
+.social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    color: royalblue;
+    background:#00102F ;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    
+    
+}
+    
+.social-icons a:hover {
+    color: white;
+    transform: scale(1.2);
+}
+.bottom-bar{
+    color: gold;
+    background: #14213d;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+.bottom-bar p{
+    color: gold;
+    margin: 0;
+    font-size: 20px;
+    padding: 7px;
+}
+
+     
