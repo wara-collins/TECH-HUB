@@ -318,270 +318,128 @@ margin-top: 200px;
     margin-top: 19px;
     margin-left: 80px;
 }
-
-
-.about-1{
-    align-items: center;
-    background: url("img/Coding workshop-pana.png") no-repeat;
-    background-size: 600px 800px;
-    background-position: left 750px top 70px;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0 7%;
-    margin-top: 100px;
-   
-}
-.about-1 h1{
-    color: #ededed;
-    font-size: 60px;
-    font-weight: 700;
-    text-decoration: none;
-    line-height: 1.2;
-    margin-top: 300px;
-}
-
-
-.about-1 p{
-    font-size: 20px;
-    color: white;
-    font-weight: 700;
-    margin: 20px 5px 40px;
-   
-    
-}
-.home-content{
-    max-width: 700px;
-}
-
-
-.explore_container h2{
-    margin-bottom: 2rem; 
-    color: #fca311;
-    margin-inline: auto;
-    line-height: 2rem;
-    text-align: center;
-    max-width: 600;
-    font-size: 2.5rem;
-}
-.explore_container p{
-    color: #e5e5e5;
-    text-align: center;
-    font-size: 2rem;
-}
-.explore-grid{
-    margin-block: 4rem;
-    display: grid;
-    gap: 5rem;
-}
-.explore-card{
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 5px 5px 20px royalblue;
-    transition: 1s;
-}
-.explore-card:hover{
-    background-color: #14213d;
-
-}
-.explore-card span{
-    display: inline-block;
-    margin-bottom: 1rem;
-    padding: 5px 11px;
-    font-size: 1.5rem;
-    transition: 0.3s;
-    border-radius: 10px;
-
-}
-.explore-card img{
-    border-radius: 15px;
-}
-.explore-card:hover span{
-    color: #fca311;
-    background-color: #14213d;
-
-}
-.explore-card h4{
-    margin-bottom: .5rem;
-    font-size: 1.2rem;
-    font-weight: 700;
-    color: #fca311;
-    transition: 3s; 
-}
-.explore-card p{
-    color: #e5e5e5;
-    font-size: 1.2rem;
-    transition: 0.3s;
-}
-.explore-card:hover p{
+.work{
     color: gold;
-
-}
-.explore-btn{
-    text-align: center;
-    padding: 4rem 1rem;
-}
-.explore-btn button{
-    padding: 1rem 2rem;
-    outline: none;
-    border: none;
-    font-size: 1.5rem;
-    color: #14213d;
-    background-color: #fca311;
-    border-radius: 5px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-.explore-grid{
-    grid-template-columns: repeat(4, 1fr);
-}
-@media (width >1024px){
-    .steps_card{
-        padding: 1.5rem;
-    }
-}
-.explore-card {
-    padding: 1.5rem;
-    margin-left: 20px;
-
-}
-.explore_container{
     margin-top: 100px;
-}
-
-.explore-img{
-    margin-top: -40px;
-    display: flex;
-    gap: 2rem;
-    margin-left: 100px;
-    
-}
-#team{
-    align-items: center;
-    background: url("img/Best HR Outsourcing Companies in Pakistan.jpeg") no-repeat;
+    text-align: center;
    
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    background-size: 1190px 600px;
-    margin-top: 100px;
-   background-position: left 70px top 70px;
-   padding: 0 7%;
+
 }
-#team h1{
-    color: #e5e5e5;
+.work h1{
+    color: royalblue;
     text-align: center;
-    font-size: 36px;
-    margin-top: -600px;
+    font-size: 56px;
+    font-weight: 600;
+    margin-top: 50px;
     margin-bottom: 15px;
     position: relative;
-    font-weight: 600;
-    margin-left: 400px;
 }
-#team h1:after{
+.work p{
+    color: #e5e5e5;
+}
+.work h3{
+    color: royalblue;
+    font-size: 36px;
+}
+.work h1:after{
     content: '';
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translatex(-50%);
-    width: 270px;
+    width: 300px;
     height: 5px;
     background-color: royalblue;
-    
+    margin-top: 900px;
 }
-
-
-
-/*footer*/
-footer{
-    background: #e5e5e5;
-    padding-top: 50px;
-    margin-top: 300px;
+#id1{
+    color: #E5E5E5;
+    font-size: 25px;
 }
-.container{
-    width: 1140px;
-    margin: auto;
+.work-box{
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 100px;
+    margin-left: 50px;
 }
-.footer-content{
-    width: 34%;
-}
-h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
-    
-}
-.footer-content p{
-    width: 360px;
-    margin: auto;
-    padding: 5px;
-}
-.footer-content ul{
-    text-align: center;
-}
-.list li{
-    width: 100px;
-    text-align: center;
-    list-style-type: none;
-    padding: 7px;
-    position: relative;
-    
-}
-.list li::before{
-    content: "";
-    position: absolute;
-    transform: translate(-50%,-50%);
-    left: 90%;
-    top: 100%;
-    width: 0;
-    height: 2px;
-    background-color: red;
-    transition-duration: 5s;
-}
-.list li:hover::before{
-    width: 70px;
-}
-.social-icons{
-    text-align: center;
-    padding: 0;
-    margin-left: -170px;
-}
-.social-icons li{
-    display: inline-block;
-    text-align: center;
-    margin: 10 -10px;
-}
-.social-icons a {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 24px;
-    color: royalblue;
-    background:#00102F ;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    
-    
-}
-    
-.social-icons a:hover {
-    color: white;
-    transform: scale(1.2);
-}
-.bottom-bar{
-    color: gold;
-    background: #14213d;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 50px;
-}
-.bottom-bar p{
-    color: gold;
-    margin: 0;
+.work-box1 h1{
+    color: black;
     font-size: 20px;
-    padding: 7px;
+    font-weight: 600;
+}
+ .button-container {      
+      display: flex;
+      gap: 10px;
+      margin-top: 100PX;
+    }
+
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: royalblue;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      font-size: 16px;
+      font-weight: 600;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.16);
+      margin-top: 100px;
+      margin-left: 100px;
+     
+    }
+
+.component {
+      margin-top: 60px;
+      display: none;
+      padding: 15px;
+ }
+.component.active {
+      display: block;
+}
+#firstComponent {
+      display: block; /* Show first component by default */
 }
 
-     
+.front{
+    height: 520px;
+    border-radius: 10px;
+    display: flex;
+    gap:20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    padding: 20px; 
+    
+}
+    
+.component-1{
+    background-color:#081b29 ;
+    color: #E5E5E5;
+    border-radius: 10px;
+    height:150px;
+    width: 300px;
+    margin-top: 0px;
+    
+}
+.component-1 img{
+    margin-top: 10PX;
+    margin-left: 100PX;
+}
+.component-1 h3{
+    color: #E5E5E5;
+    margin-top: 10px;
+    margin-left: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    
+} 
+.component-1 P{
+    color: #E5E5E5;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 16px;
+    margin: 0 20PX;
+}
