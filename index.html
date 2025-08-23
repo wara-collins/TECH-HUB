@@ -103,8 +103,8 @@
 
 
         <div class="button-container">
-    <button onclick="showComponent('first')">Show First Component</button>
-    <button onclick="showComponent('second')">Show Second Component</button>
+    <button onclick="showComponent('first')">FRONT-END</button>
+    <button onclick="showComponent('second')">BACK-END</button>
   </div>
 
 
@@ -128,22 +128,22 @@
 </p>
   </div>
   <div class="component-1">
-        <img src="img/Untitled-3.png " height="30px" width="50px" alt="">
+        <img src="img/5.jpg " height="30px" width="50px" alt="">
     <h3>BOOTTRAPS</h3>
     <p>Prebuilt CSS components for fast UI design </p>
     </div>
     <div class="component-1">
-    <img src="img/Untitled-3.png " height="30px" width="50px" alt="">
+    <img src="img/Jquery is something else!!!.jpg" height="80px" width="100px" alt="">
     <h3>JQUERY</h3>
     <p> Simplifies DOM manipulation and AJAX</p>
   </div>
   <div class="component-1">
-    <img src="img/Untitled-3.png " height="30px" width="50px" alt="">
+    <img src="img/3.png" height="60px" width="50px" alt="">
     <h3>ANGULAR</h3>
     <p>Full-fledged front-end framework by Google</p>
   </div>
   <div class="component-1">
-    <img src="img/Untitled-3.png " height="30px" width="50px" alt="">
+    <img src="img/]6.jpg" height="60px" width="100px" alt="">
     <h3>TAILWIND CSS</h3>
     <p> Utility-first CSS for custom styling.</p>
   </div>
@@ -188,24 +188,126 @@
     <p>Microsoft’s language for building scalable web and desktop apps</p>
   </div>
   <div class="component-1">
-    <img src="img/Untitled-3.png " height="30px" width="50px" alt="">
+    <img src="img/Untitled-2.jpg " height="30px" width="50px" alt="">
     <h3>Go (Golang)</h3>
     <p>Fast and efficient; good for APIs and microservices</p>
   </div>
   </div>
   </div>
+  <script>
+function showComponent(id) {
+  const components = document.querySelectorAll('.component');
+  components.forEach(comp => {
+    comp.style.display = 'none';
+    comp.classList.remove('active');
+  });
+  const selectedComponent = document.getElementById(id);
+  selectedComponent.style.display = 'block';
+  selectedComponent.classList.add('active');
+}
 
-<script>
-    function showComponent(id) {
-      document.querySelectorAll('.component').forEach(el => el.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-    }
- </script>
+
+window.onload = function() {
+  showComponent('first');
+}
+</script>
+
+<div class="community">
+  <h1>JOIN OUR COMMUNITY TODAY</h1>
+  <h6>CONNECT,COLLABORATE,AND GROW WITH FELLOW TECH ENTHUSIASTS</h6>
+  <img src="img/tech company-amico.png " width="1300px" height="500px">
+  <div class="community-1">
+  <div class="community-card">
+    <img src="img/Conference-rafiki.png" width="380px" height="150px">
+    <h3>Event and Meetups</h3>
+  <p>Attend tech talks,networking sessions and hand on project with Expert and  Connect with fellow learners, mentors, and professionals to share ideas, ask questions, and grow together.
+</p>
+  </div>
+  <div class="community-card">
+    <img src=" img/Online tech talks-bro.png" width="380px" height="150px">
+    <h3>ONLINE FORUM</h3>
+    <p>Ask questions,share knowledge and Collaborate on open Source projects Basic coding, robotics & digital creativity programs for younger learners.
+
+</p>
+  </div>
+  <div class="community-card"> 
+    <img src="img/Business analytics-bro.png   " width="380px" height="150px">
+    <h3>MENTORSHIP PROGRAM</h3>
+    <p>Get guidiance from experience Developersand Industry profestionals Learn how to contribute to real-world open-source projects and collaborate with developers globally.</p>
+  </div>
+<div class="community-card">
+ <img src="img/Online learning-amico.png" width="380px" height="150px"> 
+    <h3>Project Showcase</h3>
+    <p>Present your tech projects to the community, investors, or hiring managers for feedback and exposure.Participate in projects that solve real local problems using technology to give back to the community</p>
+  </div>
+  <div class="community-card">
+    <img src="img/Web Development.jpeg" width="380px" height="150px">
+    <h3>WEB DESIGN</h3>
+    <p>Intensive coding programs designed to get you job-ready in months.Learn full-stack development, build your portfolio, and gain in-demand skills.</p>
+  </div>
+  <div class="community-card">
+   <img src="img/Stress-rafiki.png" width="380px" height="150px"> 
+    <h3>Ask, Help, Answer</h3>
+    <p> Whether you have a question or can help someone else—every contribution makes the community stronger.</p>
+  </div>
+  </div>
+  </div>
+  <div class="bot-5">JOIN COMMUNITY</div>
+
+    
+ 
+  </section>
+  
+
+  <div class="SUPPORT">
+    <h1>SUPPORT US</h1>
+    <p>We’re here to walk with you through your tech journey.Our team is dedicated
+    to helping you unlock </p>
+    <h6>your can be hard, we make asier with community.You don’t have to start alone start here.</h6>
+    <div class="btn-1">
+            <a href="signup.html" class="button">VIEW MORE</a>
+            <a href="login.html" class="button">CONTACT</a>
+            </div>
+          </div>
+  
 
 
+ <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>CONTACT US</h3>
+                <P>mrcollinswarah@gmail.com</P>
+                <p>collinswarah200</p>
+                <p>+237652868652</p>
+                <p>BAMEDA,CAMEROON</p>
+            </div>
+            <div  class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>FOLLOW US</h3>
+                <ul class="social-icons">
+                <li><a href="#"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-whatsapp' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-github' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+                
+            </ul>
+            <img src="img/30.png" alt="">
 
-
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&COPY;2025 COLLINS WARAH .All rights reserveed</p>
+        </div>
+      </footer>
+</body>
+</html>         
 </body>
 </html>
-
-   
