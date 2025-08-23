@@ -1,0 +1,38 @@
+
+#video-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+#video-controls {
+  margin-bottom: 20px;
+}
+
+#search-input {
+  padding: 5px;
+  width: 200px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.video-item {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.video-item h3 {
+  margin-top: 0;
+}
+
+.delete-btn {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
