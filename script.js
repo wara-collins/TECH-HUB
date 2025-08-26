@@ -1,6 +1,8 @@
 
 let videos = [
   { id: 1, title: "HTML Basics", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+  { id: 1, title: "HTML Basics", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+  
   { id: 2, title: "CSS Fundamentals", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
   { id: 3, title: "JavaScript Essentials", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" }
 ];
@@ -14,7 +16,7 @@ function displayVideos(videosToShow) {
     videoElement.className = 'video-item';
     videoElement.innerHTML = `
       <h3>${video.title}</h3>
-      <iframe width="560" height="315" src="${video.url}" frameborder="0" allowfullscreen></iframe>
+      <iframe width="360" height="315" src="${video.url}" frameborder="0" allowfullscreen></iframe>
       <button class="delete-btn" data-id="${video.id}">Delete</button>
     `;
     videoList.appendChild(videoElement);

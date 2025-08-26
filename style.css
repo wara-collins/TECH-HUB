@@ -14,7 +14,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: #00102F;
+    background: #001722;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +65,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -82,7 +82,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #E5E5E5;
 }
 
 .dropdown:hover .dropdown-content {
@@ -103,6 +103,7 @@ body {
     align-items: center;
     padding: 0 7%;
     margin-top: 100px;
+    
    
 }
 .home-content{
@@ -422,7 +423,9 @@ margin-top: 200px;
       display: flex;
       gap: 10px;
       margin-top: 100PX;
-    }
+
+}
+
 
     button {
       padding: 10px 20px;
@@ -610,7 +613,8 @@ margin-top: 200px;
 
 
 footer{
-    background: #ebe;
+    background-color: #14213d;
+    background: e0e0e0;
     padding-top: 50px;
     margin-top: 100px;
 }
@@ -626,11 +630,13 @@ footer{
 h3 {
     font-size: 28px;
     margin-bottom: 15px;
+    color: royalblue;
 }
 .footer-content p{
     width: 360px;
     margin: auto;
     padding: 5px;
+    color: #e5e5e5;
 }
 .footer-content ul{
     text-align: center;
@@ -641,6 +647,7 @@ h3 {
     list-style-type: none;
     padding: 7px;
     position: relative;
+    color: gold;
 }
 .list li::before{
     content: "";
@@ -650,8 +657,12 @@ h3 {
     top: 100%;
     width: 0;
     height: 2px;
-    background-color: red;
+    background-color: white;
     transition-duration: 5s;
+}
+.list a{
+    color: #e8f0fe;
+    margin-left: 10px;
 }
 .list li:hover::before{
     width: 70px;
@@ -671,24 +682,23 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: red;
+    color: royalblue;
 }
 .social-icons i{
     font-size: 35px;
-    color: #081b29;
+    color: #E5E5E5;
 }
 .social-icons i:hover{
     color: royalblue;
 }
 .bottom-bar{
-    color: #ebe;
-    background: #14213d;
+    background: #081b29;
     text-align: center;
     padding: 10px 0;
     margin-top: 50px;
 }
 .bottom-bar p{
-    color: gold;
+    color: #E5E5E5;
     margin: 0;
     font-size: 20px;
     padding: 7px;
