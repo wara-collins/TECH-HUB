@@ -1,9 +1,6 @@
-
 let videos = [
   { id: 1, title: "HTML Basics", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-  { id: 1, title: "HTML Basics", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
-  
-  { id: 2, title: "CSS Fundamentals", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+  { id: 2, title: "CSS Fundamentals", url: "https://www.youtube.com/embed/OXGznpKZ_sA" },
   { id: 3, title: "JavaScript Essentials", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" }
 ];
 
@@ -14,11 +11,24 @@ function displayVideos(videosToShow) {
   videosToShow.forEach(video => {
     const videoElement = document.createElement('div');
     videoElement.className = 'video-item';
-    videoElement.innerHTML = `
-      <h3>${video.title}</h3>
-      <iframe width="360" height="315" src="${video.url}" frameborder="0" allowfullscreen></iframe>
-      <button class="delete-btn" data-id="${video.id}">Delete</button>
-    `;
+    
+    // Check if URL is valid for embedding
+    const embedUrl = convertToEmbedUrl(video.url);
+    
+    if (embedUrl) {
+      videoElement.innerHTML = `
+        <h3>${video.title}</h3>
+        <iframe width="360" height="315" src="${embedUrl}" frameborder="0" allowfullscreen></iframe>
+        <button class="delete-btn" data-id="${video.id}">Delete</button>
+      `;
+    } else {
+      videoElement.innerHTML = `
+        <h3>${video.title}</h3>
+        <p style="color: red;">Invalid video URL: ${video.url}</p>
+        <button class="delete-btn" data-id="${video.id}">Delete</button>
+      `;
+    }
+    
     videoList.appendChild(videoElement);
   });
 
@@ -26,6 +36,36 @@ function displayVideos(videosToShow) {
   document.querySelectorAll('.delete-btn').forEach(btn => {
     btn.addEventListener('click', deleteVideo);
   });
+}
+
+function convertToEmbedUrl(url) {
+  // Remove any trailing spaces
+  url = url.trim();
+  
+  // Handle YouTube URLs
+  if (url.includes('youtube.com') || url.includes('youtu.be')) {
+    // Convert youtu.be to youtube.com/embed
+    if (url.includes('youtu.be/')) {
+      const videoId = url.split('youtu.be/')[1].split('?')[0];
+      return `https://www.youtube.com/embed/${videoId}`;
+    }
+    
+    // Convert watch URLs to embed URLs
+    if (url.includes('youtube.com/watch')) {
+      const videoId = new URL(url).searchParams.get('v');
+      if (videoId) {
+        return `https://www.youtube.com/embed/${videoId}`;
+      }
+    }
+    
+    // If it's already an embed URL, return as is
+    if (url.includes('youtube.com/embed')) {
+      return url;
+    }
+  }
+  
+  // Return null for unsupported URLs
+  return null;
 }
 
 function searchVideos() {
@@ -38,11 +78,24 @@ function searchVideos() {
 
 function addVideo() {
   const title = prompt("Enter video title:");
-  const url = prompt("Enter video URL:");
+  const url = prompt("Enter video URL (YouTube only):");
+  
   if (title && url) {
-    const newVideo = { id: videos.length + 1, title, url };
-    videos.push(newVideo);
-    displayVideos(videos);
+    const embedUrl = convertToEmbedUrl(url);
+    if (embedUrl) {
+      const newVideo = { 
+        id: Date.now(), // Use timestamp for unique ID
+        title, 
+        url: embedUrl 
+      };
+      videos.push(newVideo);
+      displayVideos(videos);
+      alert("Video added successfully!");
+    } else {
+      alert("Invalid YouTube URL. Please enter a valid YouTube video URL.");
+    }
+  } else {
+    alert("Please provide both title and URL.");
   }
 }
 
