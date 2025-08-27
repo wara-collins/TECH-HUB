@@ -1,7 +1,7 @@
 let videos = [
-  { id: 1, title: "HTML Basics", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" },
+  { id: 1, title: "HTML Basics", url: " https://youtu.be/kUMe1FH4CHE?si=IKqBYV-q6s-rUb83" },
   { id: 2, title: "CSS Fundamentals", url: "https://www.youtube.com/embed/OXGznpKZ_sA" },
-  { id: 3, title: "JavaScript Essentials", url: "https://www.youtube.com/embed/dQw4w9WgXcQ" }
+  { id: 3, title: "JavaScript Essentials", url: "https://youtu.be/FtaQSdrl7YA?si=-mUduZCXVYOanH6c" }
 ];
 
 function displayVideos(videosToShow) {
