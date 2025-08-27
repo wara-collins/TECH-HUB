@@ -1,3 +1,5 @@
+
+
 *{
     margin: 0;
     padding: 0;
@@ -22,6 +24,10 @@ body {
     height: 100PX;
 
 }
+.navbar a:hover,
+.navbar a.active {
+    color: royalblue;
+}
 
 .logo {
     font-size: 35px;
@@ -36,14 +42,7 @@ body {
     font-weight: 700;
     margin-left: 35px;
     transition: .3s;
-    text-decoration: none;
-    padding: 10px 20px;
 }
-.navbar a:hover,
-.navbar a.active {
-    color: royalblue;
-}
-
 /* Dropdown styles */
 .dropdown {
     position: relative;

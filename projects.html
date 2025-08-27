@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - TECH HUB</title>
+    <link rel="stylesheet" href="projects.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+     <header class="header">
+        <a href="index.html" class="logo"><img src="img/Untitled-6.png"height="80px" width="100px" alt=""></a>
+
+        <nav class="navbar">
+            <a href="index.h" class="active">HOME</a>
+            
+            <div class="dropdown">
+                <a href="#" class="dropbtn">START LEARNING</a>
+                <div class="dropdown-content">
+                    <a href="projects.html">PROJECT</a>
+                    <a href="roadmaps.html">ROADMAPS</a>
+                    <a href="tutorial.html">TUTORIALS</a>
+                    <a href="ebooks.html">EBOOKS</a>
+                </div>
+            </div>
+            <a href class="button">COMMUNIYTY</a>
+            <a href="#">CONTACT</a>
+            
+
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Tech Hub Projects</h1>
+        
+        <div class="category-buttons">
+            <button class="category-btn active" data-category="all">All Projects</button>
+            <button class="category-btn" data-category="frontend">Frontend</button>
+            <button class="category-btn" data-category="backend">Backend</button>
+        </div>
+
+        <div id="projects-container">
+            <div class="project" data-category="frontend">
+                <h2>Responsive Portfolio Website</h2>
+                <p>A personal portfolio website showcasing web development skills.</p>
+                <button class="view-more">View More</button>
+            </div>
+
+            <div class="project" data-category="backend">
+                <h2>RESTful API for Task Management</h2>
+                <p>A backend API for managing tasks and to-do lists.</p>
+                <button class="view-more">View More</button>
+            </div>
+
+            <div class="project" data-category="frontend">
+                <h2>Interactive JavaScript Game</h2>
+                <p>A browser-based game built with HTML, CSS, and JavaScript.</p>
+                <button class="view-more">View More</button>
+            </div>
+
+            <div class="project" data-category="backend">
+                <h2>Database-driven Blog System</h2>
+                <p>A backend system for managing blog posts and comments.</p>
+                <button class="view-more">View More</button>
+            </div>
+
+            <!-- Add more projects here -->
+        </div>
+
+        <button id="submit-project" class="submit-btn">Submit Your Project</button>
+    </div>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <div id="submit-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Submit Your Project</h2>
+            <form id="submit-form">
+                <label for="project-title">Project Title:</label><br>
+                <input type="text" id="project-title" name="project-title" required><br>
+                <label for="project-description">Project Description:</label><br>
+                <textarea id="project-description" name="project-description" required></textarea><br>
+                <label for="project-url">Project URL:</label><br>
+                <input type="url" id="project-url" name="project-url" required><br>
+                <label for="project-category">Category:</label><br>
+                <select id="project-category" name="project-category" required>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                </select><br>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="projects.js"></script>
+
+    <footer>
+        <div class="container-22">
+            <div class="footer-content">
+                <h3>CONTACT US</h3>
+                <P>mrcollinswarah@gmail.com</P>
+                <p>collinswarah200@gmail.com</p>
+                <p>+237652868652</p>
+                <p>BAMEDA,CAMEROON</p>
+            </div>
+            <div  class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>FOLLOW US</h3>
+                <ul class="social-icons">
+                <li><a href="#"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-whatsapp' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-github' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+                
+            </ul>
+            <img src="img/Untitled-12.jpg" alt="">
+
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&COPY;2025 COLLINS WARAH .All rights reserveed</p>
+        </div>
+      </footer>
+
+
+</body>
+</html>
