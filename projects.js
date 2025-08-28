@@ -2,6 +2,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const categoryButtons = document.querySelectorAll('.category-btn');
     const projects = document.querySelectorAll('.project');
+    const submitForm = document.getElementById('submit-form');
+    const submitModal = document.getElementById('submit-modal');
+    const closeButtons = document.querySelectorAll('.close');
+    const submitProjectBtn = document.getElementById('submit-project');
 
     categoryButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -18,5 +22,33 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
+    });
+
+    // Show submit modal when submit project button is clicked
+    submitProjectBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        submitModal.style.display = 'block';
+    });
+
+    // Handle form submission
+    submitForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert('Project submitted successfully!');
+        submitForm.reset();
+        submitModal.style.display = 'none';
+    });
+
+    // Handle closing of modals
+    closeButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            this.closest('.modal').style.display = 'none';
+        });
+    });
+
+    // Close modal when clicking outside of it
+    window.addEventListener('click', function(e) {
+        if (e.target.classList.contains('modal')) {
+            e.target.style.display = 'none';
+        }
     });
 });
