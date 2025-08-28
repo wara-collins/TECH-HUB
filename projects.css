@@ -75,6 +75,23 @@
     z-index: 1000;
 }
 
+.close-content {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.close-content:hover,
+.close-content:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .project-toggle {
     display: none;
 }

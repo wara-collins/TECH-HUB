@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitModal = document.getElementById('submit-modal');
     const closeButtons = document.querySelectorAll('.close');
     const submitProjectBtn = document.getElementById('submit-project');
+    const viewMoreButtons = document.querySelectorAll('.view-more');
 
     categoryButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         submitModal.style.display = 'none';
     });
 
-    // Handle closing of modals
+    // Handle closing of modals and view more sections
     closeButtons.forEach(button => {
         button.addEventListener('click', function() {
             this.closest('.modal').style.display = 'none';
@@ -50,5 +51,26 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.target.classList.contains('modal')) {
             e.target.style.display = 'none';
         }
+    });
+
+    // Handle View More functionality
+    viewMoreButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const projectFullContent = this.previousElementSibling;
+            projectFullContent.style.display = 'block';
+            this.textContent = 'Close';
+        });
+    });
+
+    // Handle closing of view more sections
+    document.querySelectorAll('.close-content').forEach(closeButton => {
+        closeButton.addEventListener('click', function() {
+            const projectFullContent = this.parentElement;
+            projectFullContent.style.display = 'none';
+            const viewMoreButton = projectFullContent.nextElementSibling || projectFullContent.parentElement.querySelector('.view-more');
+            if (viewMoreButton) {
+                viewMoreButton.textContent = 'View More';
+            }
+        });
     });
 });
