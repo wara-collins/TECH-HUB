@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - TECH HUB</title>
+    <link rel="stylesheet" href="community.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        // Check if the user is logged in
+        function checkLogin() {
+            if (localStorage.getItem('isLoggedIn') !== 'true') {
+                // If not logged in, redirect to the login page
+                window.location.replace('login.html');
+            }
+        }
+
+        // Run the check when the page loads
+        window.addEventListener('DOMContentLoaded', checkLogin);
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="img/Untitled-6.png" height="80px" width="100px" alt=""></a>
+
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">START LEARNING</a>
+                <div class="dropdown-content">
+                    <a href="projects.html">PROJECT</a>
+                    <a href="roadmaps.html">ROADMAPS</a>
+                    <a href="tutorial.html">TUTORIALS</a>
+                    <a href="ebooks.html">EBOOKS</a>
+                </div>
+            </div>
+            <a href="login.html" class="button">COMMUNITY</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+
+    <div id="community-content" style="display: none;">
+        <!-- Your community page content here -->
+        <h1>Welcome to the TECH HUB Community</h1>
+        <p>Hello, <span id="username-display"></span>!</p>
+        
+        <!-- Add your community content here -->
+
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <div class="community-container">
+        <div class="community-header">
+            <h1>JOIN OUR COMMUNITY TODAY</h1>
+            <p>CONNECT, COLLABORATE, AND GROW WITH FELLOW TECH ENTHUSIASTS</p>
+        </div>
+        <img src="img/tech company-amico.png" class="community-image" alt="Community Image">
+
+        <div class="community-features">
+            <div class="feature-card">
+                <img src="img/Conference-rafiki.png" alt="Event and Meetups">
+                <h3>Event and Meetups</h3>
+                <p>Attend tech talks, networking sessions, and hands-on projects with experts.</p>
+            </div>
+            <div class="feature-card">
+                <img src="img/Online tech talks-bro.png" alt="Online Forum">
+                <h3>ONLINE FORUM</h3>
+                <p>Ask questions, share knowledge, and collaborate on open-source projects.</p>
+            </div>
+            <div class="feature-card">
+                <img src="img/Business analytics-bro.png" alt="Mentorship Program">
+                <h3>MENTORSHIP PROGRAM</h3>
+                <p>Get guidance from experienced developers and industry professionals.</p>
+            </div>
+            <div class="feature-card">
+                <img src="img/Online learning-amico.png" alt="Project Showcase">
+                <h3>Project Showcase</h3>
+                <p>Present your tech projects to the community for feedback and exposure.</p>
+            </div>
+            <div class="feature-card">
+                <img src="img/Web Development.jpeg" alt="Web Design">
+                <h3>WEB DESIGN</h3>
+                <p>Intensive coding programs designed to get you job-ready in months.</p>
+            </div>
+            <div class="feature-card">
+                <img src="img/Stress-rafiki.png" alt="Ask, Help, Answer">
+                <h3>Ask, Help, Answer</h3>
+                <p>Every contribution makes the community stronger.</p>
+            </div>
+        </div>
+
+        <a href=" https://discord.gg/hYxzCRE8" class="join-button">JOIN OUR DISCORD</a>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>CONTACT US</h3>
+                <P>mrcollinswarah@gmail.com</P>
+                <p>collinswarah200@gmail.com</p>
+                <p>+237652868652</p>
+                <p>BAMEDA,CAMEROON</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>FOLLOW US</h3>
+                <ul class="social-icons">
+                <li><a href="https://www.facebook.com/collins.warah"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="https://wa.me/message/D6GD5Q5J5QIPB1"><i class='bx bxl-whatsapp' ></i></a></li>
+                <li><a href="https://github.com/wara-collins "><i class='bx bxl-github' ></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mr-collins-534b942b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class='bx bxl-linkedin-square'></i></a></li>
+            </ul>
+            <img src="img/Untitled-12.jpg" alt="">
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&COPY;2025 COLLINS WARAH. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+            const communityContent = document.getElementById('community-content');
+            const usernameDisplay = document.getElementById('username-display');
+
+            if (isLoggedIn) {
+                const username = localStorage.getItem('username');
+                usernameDisplay.textContent = username;
+                communityContent.style.display = 'block';
+            } else {
+                window.location.href = 'login.html';
+            }
+        });
+
+        function logout() {
+            localStorage.removeItem('isLoggedIn');
+            localStorage.removeItem('userEmail');
+            localStorage.removeItem('username');
+            window.location.href = 'login.html';
+        }
+    </script>
+
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>CONTACT US</h3>
+                <P>mrcollinswarah@gmail.com</P>
+                <p>collinswarah200@gmail.com</p>
+                <p>+237652868652</p>
+                <p>BAMEDA,CAMEROON</p>
+            </div>
+            <div  class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>FOLLOW US</h3>
+                <ul class="social-icons">
+                <li><a href="#"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-whatsapp' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-github' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+                
+            </ul>
+            <img src="img/Untitled-12.jpg" alt="">
+
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&COPY;2025 COLLINS WARAH .All rights reserveed</p>
+        </div>
+      </footer>
+
+</body>
+</html>

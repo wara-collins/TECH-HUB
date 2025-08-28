@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TECH HUB</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="img/Untitled-6.png" height="80px" width="100px" alt=""></a>
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">START LEARNING</a>
+                <div class="dropdown-content">
+                    <a href="projects.html">PROJECT</a>
+                    <a href="roadmaps.html">ROADMAPS</a>
+                    <a href="tutorial.html">TUTORIALS</a>
+                    <a href="ebooks.html">EBOOKS</a>
+                </div>
+            </div>
+            <a href="login.html" class="button active">COMMUNITY</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="login-container">
+            <h1>Login to TECH<br> HUB</h1>
+            <p>Please enter your credentials to access the community</p>
+            
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button type="submit" class="login-button">LOGIN</button>
+                
+                <div class="signup-link">
+                    <a href="signup.html">Don't have an account? Sign up</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loginForm = document.getElementById('login-form');
+
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                const email = document.getElementById('email').value.trim();
+                const username = document.getElementById('username').value.trim();
+                const password = document.getElementById('password').value.trim();
+
+                if (email && username && password) {
+                    // Simulate a login process
+                    localStorage.setItem('isLoggedIn', 'true');
+                    localStorage.setItem('userEmail', email);
+                    localStorage.setItem('username', username);
+                    
+                    // Redirect to community page
+                    window.location.href = 'community.html';
+                } else {
+                    alert('Please fill in all fields');
+                }
+            });
+        });
+    </script>
+
+     <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>CONTACT US</h3>
+                <P>mrcollinswarah@gmail.com</P>
+                <p>collinswarah200@gmail.com</p>
+                <p>+237652868652</p>
+                <p>BAMEDA,CAMEROON</p>
+            </div>
+            <div  class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>FOLLOW US</h3>
+                <ul class="social-icons">
+                <li><a href="#"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-whatsapp' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-github' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-linkedin-square'></i></a></li>
+                
+            </ul>
+            <img src="img/Untitled-12.jpg" alt="">
+
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&COPY;2025 COLLINS WARAH .All rights reserveed</p>
+        </div>
+      </footer>
+
+</body>
+</html>

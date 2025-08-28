@@ -67,8 +67,8 @@ document.addEventListener('DOMContentLoaded', function() {
         closeButton.addEventListener('click', function() {
             const projectFullContent = this.parentElement;
             projectFullContent.style.display = 'none';
-            const viewMoreButton = projectFullContent.nextElementSibling || projectFullContent.parentElement.querySelector('.view-more');
-            if (viewMoreButton) {
+            const viewMoreButton = projectFullContent.nextElementSibling;
+            if (viewMoreButton && viewMoreButton.classList.contains('view-more')) {
                 viewMoreButton.textContent = 'View More';
             }
         });
