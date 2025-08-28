@@ -136,18 +136,6 @@ margin-top: 900px;
     max-width: 100%;
     
 }
-#video-section p{
-    color: white;
-    font-size:17px;
-    margin-left: 300px;
-    padding: 2px 29px;
-    padding-left: 20px;
-    background-color: royalblue;
-    height: 120px;
-    width: 500px;
-    border: solid #14213d;
-    border-radius: 10px;
-}
 
 #video-section img{
     height:600px;
@@ -164,6 +152,7 @@ margin-top: 900px;
   border-radius: 10px;
   border-color: royalblue;
   margin-top: 100px;
+  color: #E5E5E5;
 }
 
 button {

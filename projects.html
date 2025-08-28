@@ -40,33 +40,125 @@
 
         <div id="projects-container">
             <div class="project" data-category="frontend">
+                <input type="checkbox" id="project1" class="project-toggle">
+                <label for="project1" class="view-more">View More</label>
                 <h2>Responsive Portfolio Website</h2>
-                <p>A personal portfolio website showcasing web development skills.</p>
-                <button class="view-more">View More</button>
+                <div class="project-preview">
+                    <p>Create a responsive portfolio website using HTML, CSS, and JavaScript to showcase your skills and projects.</p>
+                </div>
+                <div class="project-full-content">
+                    <p>This project involves building a fully responsive portfolio website that adapts to various screen sizes. It will showcase your skills, projects, and provide a way for potential employers or clients to contact you.</p>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>Responsive layout using CSS Grid and Flexbox</li>
+                        <li>Interactive navigation menu</li>
+                        <li>Project showcase section with filtering capability</li>
+                        <li>Contact form with client-side validation</li>
+                        <li>Smooth scrolling and animations for enhanced UX</li>
+                    </ul>
+                    <h3>Technologies Used:</h3>
+                    <ul>
+                        <li>HTML5 for structure</li>
+                        <li>CSS3 for styling and responsiveness</li>
+                        <li>JavaScript for interactivity and form validation</li>
+                        <li>Git for version control</li>
+                    </ul>
+                    <h3>Learning Outcomes:</h3>
+                    <p>By completing this project, you'll gain hands-on experience in front-end development, responsive design techniques, and creating a professional online presence. You'll also learn about web accessibility and performance optimization.</p>
+                </div>
             </div>
 
             <div class="project" data-category="backend">
                 <h2>RESTful API for Task Management</h2>
-                <p>A backend API for managing tasks and to-do lists.</p>
+                <div class="project-preview">
+                    <p>A backend API for managing tasks and to-do lists.</p>
+                </div>
+                <div class="project-full-content">
+                    <p>This project involves building a RESTful API for managing tasks and to-do lists. The API will support CRUD operations for tasks, user authentication, and data persistence.</p>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>RESTful API endpoints for task management</li>
+                        <li>User authentication and authorization</li>
+                        <li>Database integration with MongoDB</li>
+                        <li>Error handling and validation</li>
+                        <li>API documentation with Swagger</li>
+                    </ul>
+                    <h3>Technologies Used:</h3>
+                    <ul>
+                        <li>Node.js with Express.js</li>
+                        <li>MongoDB with Mongoose</li>
+                        <li>JWT for authentication</li>
+                        <li>Swagger for API documentation</li>
+                        <li>Jest for testing</li>
+                    </ul>
+                    <h3>Learning Outcomes:</h3>
+                    <p>By completing this project, you'll gain hands-on experience in backend development, API design, database integration, and security practices. You'll also learn about testing strategies and documentation.</p>
+                </div>
                 <button class="view-more">View More</button>
             </div>
 
             <div class="project" data-category="frontend">
                 <h2>Interactive JavaScript Game</h2>
-                <p>A browser-based game built with HTML, CSS, and JavaScript.</p>
+                <div class="project-preview">
+                    <p>A browser-based game built with HTML, CSS, and JavaScript.</p>
+                </div>
+                <div class="project-full-content">
+                    <p>This project involves creating an interactive browser-based game using HTML5 Canvas, CSS3 animations, and JavaScript. The game will feature player controls, scoring system, and game states.</p>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>Game loop with requestAnimationFrame</li>
+                        <li>Player movement and collision detection</li>
+                        <li>Scoring system and game states</li>
+                        <li>Sound effects and background music</li>
+                        <li>Responsive design for different screen sizes</li>
+                    </ul>
+                    <h3>Technologies Used:</h3>
+                    <ul>
+                        <li>HTML5 Canvas for rendering</li>
+                        <li>CSS3 for styling and animations</li>
+                        <li>JavaScript for game logic</li>
+                        <li>Web Audio API for sound effects</li>
+                        <li>LocalStorage for saving game progress</li>
+                    </ul>
+                    <h3>Learning Outcomes:</h3>
+                    <p>By completing this project, you'll gain hands-on experience in game development concepts, animation techniques, event handling, and user interaction. You'll also learn about performance optimization and cross-browser compatibility.</p>
+                </div>
                 <button class="view-more">View More</button>
             </div>
 
             <div class="project" data-category="backend">
                 <h2>Database-driven Blog System</h2>
-                <p>A backend system for managing blog posts and comments.</p>
+                <div class="project-preview">
+                    <p>A backend system for managing blog posts and comments.</p>
+                </div>
+                <div class="project-full-content">
+                    <p>This project involves building a comprehensive blog system with a database backend. It will support post creation, editing, deletion, and comment functionality with user authentication.</p>
+                    <h3>Key Features:</h3>
+                    <ul>
+                        <li>Full CRUD operations for blog posts</li>
+                        <li>User authentication and role-based access control</li>
+                        <li>Comment system with nested replies</li>
+                        <li>Search and filtering capabilities</li>
+                        <li>Admin dashboard for content management</li>
+                    </ul>
+                    <h3>Technologies Used:</h3>
+                    <ul>
+                        <li>Node.js with Express.js</li>
+                        <li>PostgreSQL for relational database</li>
+                        <li>Redis for caching</li>
+                        <li>JWT for secure authentication</li>
+                        <li>Handlebars for server-side templating</li>
+                    </ul>
+                    <h3>Learning Outcomes:</h3>
+                    <p>By completing this project, you'll gain hands-on experience in full-stack development, database design, authentication systems, and content management. You'll also learn about scalability considerations and security best practices.</p>
+                </div>
                 <button class="view-more">View More</button>
             </div>
 
             <!-- Add more projects here -->
         </div>
 
-        <button id="submit-project" class="submit-btn">Submit Your Project</button>
+        <a href="#submit-modal" id="submit-project" class="submit-btn">Submit Your Project</a>
     </div>
 
     <div id="project-modal" class="modal">
