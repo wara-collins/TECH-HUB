@@ -48,6 +48,16 @@ body {
     position: relative;
     display: inline-block;
 }
+.navbar .dropbtn i {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.navbar .dropdown:hover .dropbtn i {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
 
 .dropbtn {
     border-radius: 5px;
@@ -113,6 +123,7 @@ body {
     border: 2px solid royalblue;
     margin-top: 50px;
     background-color: #001722;
+    color: #E5E5E5;
 }
 
 .ebook-container {
@@ -211,6 +222,16 @@ h3 {
     position: relative;
     color: gold;
 }
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+    max-width: 200px;
+    margin-left: -15px;
+}
+
 .list li::before{
     content: "";
     position: absolute;

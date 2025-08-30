@@ -49,7 +49,26 @@ body {
     position: relative;
     display: inline-block;
 }
+.navbar .dropbtn i {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
 
+.navbar .dropdown:hover .dropbtn i {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+.navbar .dropbtn i {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.navbar .dropdown:hover .dropbtn i {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
 .dropbtn {
     border-radius: 5px;
     color: #ede9e9;
@@ -227,6 +246,16 @@ h3 {
     background-color: white;
     transition-duration: 5s;
 }
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+    max-width: 200px;
+    margin-left: -15px;
+}
+
 .list a{
     color: #e8f0fe;
     margin-left: 10px;

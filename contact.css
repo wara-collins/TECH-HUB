@@ -165,7 +165,7 @@ body {
 
 .social-icon:hover,
 .social-icon:hover i {
-    color: #00abf0;
+    color: white;
 }
 
 @media (max-width: 768px) {

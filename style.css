@@ -49,7 +49,16 @@ body {
     position: relative;
     display: inline-block;
 }
+.navbar .dropbtn i {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
 
+.navbar .dropdown:hover .dropbtn i {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
 .dropbtn {
     border-radius: 5px;
     color: #ede9e9;
@@ -159,8 +168,8 @@ body {
     background: transparent;
     margin-left: 20px;
 }
-.btn-1 a:nth-child(2):{
-    color: green;
+.btn-1 a:nth-child(2):hover {
+   background-color: #14213d;
 }
 .btn-1 a:hover{
     background: #14213d;
@@ -199,7 +208,7 @@ body {
     left: 0;
     width:0;
     height: 100%;
-    background: black;
+    background: #E5E5E5;
     border-radius: 50%;
     z-index: -1;
     transition: .5s;
@@ -640,13 +649,23 @@ h3 {
 .footer-content ul{
     text-align: center;
 }
-.list li{
-    width: 100px;
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+    max-width: 200px;
+    margin-left: -15px;
+}
+
+.list li {
     text-align: center;
     list-style-type: none;
-    padding: 7px;
+    padding: 5px;
     position: relative;
     color: gold;
+    min-width: 80px;
 }
 .list li::before{
     content: "";
@@ -703,13 +722,7 @@ a:hover{
     padding: 7px;
 }
 .footer-content img{
-    width: 100px;
-    height: auto;
-    margin-left: ;
-    
     width: 180px;
     height: 120px;
-
-    
-    
+    margin-left: 0;
 }

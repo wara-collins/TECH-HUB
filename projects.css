@@ -49,6 +49,16 @@ body {
     position: relative;
     display: inline-block;
 }
+.navbar .dropbtn i {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.navbar .dropdown:hover .dropbtn i {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
 
 .dropbtn {
     border-radius: 5px;
@@ -358,6 +368,16 @@ h3 {
 .footer-content ul{
     text-align: center;
 }
+.list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+    max-width: 200px;
+    margin-left: -15px;
+}
+
 .list li{
     width: 100px;
     text-align: center;
