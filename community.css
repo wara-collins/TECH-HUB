@@ -105,6 +105,7 @@ body {
     color: royalblue;
 }
 
+
 .community-container {
     max-width: 1200px;
     margin: 120px auto 50px;
@@ -114,20 +115,27 @@ body {
 .community-header {
     text-align: center;
     margin-bottom: 50px;
+    background: linear-gradient(135deg, #001722, #081b29);
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
 }
 
 .community-header h1 {
     color: #E5E5E5;
-    font-size: 46px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 700;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
 .community-header p {
     color: royalblue;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 500;
     max-width: 800px;
     margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .community-image {
@@ -136,7 +144,13 @@ body {
     height: auto;
     margin: 0 auto 50px;
     display: block;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+.community-image:hover {
+    transform: scale(1.02);
 }
 
 .community-features {
@@ -148,16 +162,19 @@ body {
 }
 
 .feature-card {
-    background-color: #081b29;
+    background: linear-gradient(135deg, #081b29, #0f1419);
     color: #E5E5E5;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 350px;
-    padding: 20px;
-    transition: transform 0.3s ease;
+    padding: 25px;
+    min-height: 320px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
 }
 
 .feature-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
 .feature-card img {
@@ -171,7 +188,9 @@ body {
 .feature-card h3 {
     color: royalblue;
     margin: 15px 0;
-    font-size: 24px;
+    font-size: 26px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .feature-card p {
@@ -185,20 +204,22 @@ body {
     display: block;
     width: 300px;
     margin: 50px auto;
-    padding: 15px;
-    background-color: #007bff;
+    padding: 18px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
-    border-radius: 6px;
+    border-radius: 10px;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
 }
 
 .join-button:hover {
-    background-color: #14213d;
+    background: linear-gradient(135deg, #0056b3, #004085);
     transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }
 
 .discord-section {
@@ -360,10 +381,112 @@ a:hover {
     padding: 7px;
 }
 
+/* Responsiveness */
+@media (max-width: 768px) {
+    .community-container {
+        margin: 120px 10px 50px;
+        padding: 0 10px;
+    }
+
+    .community-header h1 {
+        font-size: 36px;
+    }
+
+    .community-header p {
+        font-size: 18px;
+    }
+
+    .community-image {
+        max-width: 100%;
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 350px;
+        min-height: auto;
+    }
+
+    .join-button {
+        width: 250px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .community-header h1 {
+        font-size: 28px;
+    }
+
+    .community-header p {
+        font-size: 16px;
+    }
+
+    .feature-card h3 {
+        font-size: 22px;
+    }
+
+    .join-button {
+        width: 200px;
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
 .footer-content img {
     width: 100px;
     height: auto;
-    
+
+
     width: 180px;
     height: 120px;
+}
+
+/* Styles for the logged-in community content */
+#community-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #001722, #081b29);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    margin: 50px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+#community-content h1 {
+    color: #E5E5E5;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+#community-content p {
+    color: royalblue;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+#community-content button {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+#community-content button:hover {
+    background: linear-gradient(135deg, #0056b3, #004085);
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
 }

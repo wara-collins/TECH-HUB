@@ -1,248 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects - TECH HUB</title>
-    <link rel="stylesheet" href="projects.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-     <header class="header">
-        <a href="index.html" class="logo"><img src="img/Untitled-6.png"height="80px" width="100px" alt=""></a>
+    <link rel="stylesheet" href="projects.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo"
+        ><img src="img/Untitled-6.png" height="80px" width="100px" alt=""
+      /></a>
 
-        <nav class="navbar">
-            <a href="index.h" class="active">HOME</a>
-            
-            <div class="dropdown">
-                <a href="#" class="dropbtn">START LEARNING <i class='bx bx-chevron-down'></i></a>
-                <div class="dropdown-content">
-                    <a href="projects.html">PROJECT</a>
-                    <a href="roadmaps.html">ROADMAPS</a>
-                    <a href="tutorial.html">TUTORIALS</a>
-                    <a href="ebooks.html">EBOOKS</a>
-                </div>
-            </div>
-            <a href="login.html">COMMUNIYTY</a>
-            <a href="contact.html">CONTACT</a>
-            
+      <nav class="navbar">
+        <a href="index.html" class="active">HOME</a>
 
-        </nav>
+        <div class="dropdown">
+          <a href="#" class="dropbtn"
+            >START LEARNING <i class="bx bx-chevron-down"></i
+          ></a>
+          <div class="dropdown-content">
+            <a href="projects.html">PROJECT</a>
+            <a href="roadmaps.html">ROADMAPS</a>
+            <a href="tutorial.html">TUTORIALS</a>
+            <a href="ebooks.html">EBOOKS</a>
+          </div>
+        </div>
+        <a href="login.html">COMMUNIYTY</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
     </header>
     <div class="container">
-        <h1>Tech Hub Projects</h1>
-        
-        <div class="category-buttons">
-            <button class="category-btn active" data-category="all">All Projects</button>
-            <button class="category-btn" data-category="frontend">Frontend</button>
-            <button class="category-btn" data-category="backend">Backend</button>
+      <h1>Tech Hub Projects</h1>
+
+      <div class="category-buttons">
+        <button class="category-btn active" data-category="all">
+          All Projects
+        </button>
+        <button class="category-btn" data-category="frontend">Frontend</button>
+        <button class="category-btn" data-category="backend">Backend</button>
+      </div>
+
+      <div id="projects-container">
+        <div class="project" data-category="frontend">
+          <h2>Responsive Portfolio Website</h2>
+          <div class="project-preview">
+            <p>
+              Create a responsive portfolio website using HTML, CSS, and
+              JavaScript to showcase your skills and projects.
+            </p>
+          </div>
+          <div class="project-full-content">
+            <span class="close-content">&times;</span>
+            <p>
+              This project involves building a fully responsive portfolio
+              website that adapts to various screen sizes. It will showcase your
+              skills, projects, and provide a way for potential employers or
+              clients to contact you.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+              <li>Responsive layout using CSS Grid and Flexbox</li>
+              <li>Interactive navigation menu</li>
+              <li>Project showcase section with filtering capability</li>
+              <li>Contact form with client-side validation</li>
+              <li>Smooth scrolling and animations for enhanced UX</li>
+            </ul>
+            <h3>Technologies Used:</h3>
+            <ul>
+              <li>HTML5 for structure</li>
+              <li>CSS3 for styling and responsiveness</li>
+              <li>JavaScript for interactivity and form validation</li>
+              <li>Git for version control</li>
+            </ul>
+            <h3>Learning Outcomes:</h3>
+            <p>
+              By completing this project, you'll gain hands-on experience in
+              front-end development, responsive design techniques, and creating
+              a professional online presence. You'll also learn about web
+              accessibility and performance optimization.
+            </p>
+          </div>
+          <button class="view-more">View More</button>
         </div>
 
-        <div id="projects-container">
-            <div class="project" data-category="frontend">
-                <h2>Responsive Portfolio Website</h2>
-                <div class="project-preview">
-                    <p>Create a responsive portfolio website using HTML, CSS, and JavaScript to showcase your skills and projects.</p>
-                </div>
-                <div class="project-full-content">
-                    <span class="close-content">&times;</span>
-                    <p>This project involves building a fully responsive portfolio website that adapts to various screen sizes. It will showcase your skills, projects, and provide a way for potential employers or clients to contact you.</p>
-                    <h3>Key Features:</h3>
-                    <ul>
-                        <li>Responsive layout using CSS Grid and Flexbox</li>
-                        <li>Interactive navigation menu</li>
-                        <li>Project showcase section with filtering capability</li>
-                        <li>Contact form with client-side validation</li>
-                        <li>Smooth scrolling and animations for enhanced UX</li>
-                    </ul>
-                    <h3>Technologies Used:</h3>
-                    <ul>
-                        <li>HTML5 for structure</li>
-                        <li>CSS3 for styling and responsiveness</li>
-                        <li>JavaScript for interactivity and form validation</li>
-                        <li>Git for version control</li>
-                    </ul>
-                    <h3>Learning Outcomes:</h3>
-                    <p>By completing this project, you'll gain hands-on experience in front-end development, responsive design techniques, and creating a professional online presence. You'll also learn about web accessibility and performance optimization.</p>
-                </div>
-                <button class="view-more">View More</button>
-            </div>
-
-            <div class="project" data-category="frontend">
-                <h2>Responsive Portfolio Website</h2>
-                <div class="project-preview">
-                    <p>Create a responsive portfolio website using HTML, CSS, and JavaScript to showcase your skills and projects.</p>
-                </div>
-                <div class="project-full-content">
-                    <span class="close-content">&times;</span>
-                    <p>This project involves building a fully responsive portfolio website that adapts to various screen sizes. It will showcase your skills, projects, and provide a way for potential employers or clients to contact you.</p>
-                    <h3>Key Features:</h3>
-                    <ul>
-                        <li>Responsive layout using CSS Grid and Flexbox</li>
-                        <li>Interactive navigation menu</li>
-                        <li>Project showcase section with filtering capability</li>
-                        <li>Contact form with client-side validation</li>
-                        <li>Smooth scrolling and animations for enhanced UX</li>
-                    </ul>
-                    <h3>Technologies Used:</h3>
-                    <ul>
-                        <li>HTML5 for structure</li>
-                        <li>CSS3 for styling and responsiveness</li>
-                        <li>JavaScript for interactivity and form validation</li>
-                        <li>Git for version control</li>
-                    </ul>
-                    <h3>Learning Outcomes:</h3>
-                    <p>By completing this project, you'll gain hands-on experience in front-end development, responsive design techniques, and creating a professional online presence. You'll also learn about web accessibility and performance optimization.</p>
-                </div>
-                <button class="view-more">View More</button>
-            </div>
-
-            <div class="project" data-category="backend">
-                <h2>Responsive Portfolio Website</h2>
-                <div class="project-preview">
-                    <p>Create a responsive portfolio website using HTML, CSS, and JavaScript to showcase your skills and projects.</p>
-                </div>
-                <div class="project-full-content">
-                    <span class="close-content">&times;</span>
-                    <p>This project involves building a fully responsive portfolio website that adapts to various screen sizes. It will showcase your skills, projects, and provide a way for potential employers or clients to contact you.</p>
-                    <h3>Key Features:</h3>
-                    <ul>
-                        <li>Responsive layout using CSS Grid and Flexbox</li>
-                        <li>Interactive navigation menu</li>
-                        <li>Project showcase section with filtering capability</li>
-                        <li>Contact form with client-side validation</li>
-                        <li>Smooth scrolling and animations for enhanced UX</li>
-                    </ul>
-                    <h3>Technologies Used:</h3>
-                    <ul>
-                        <li>HTML5 for structure</li>
-                        <li>CSS3 for styling and responsiveness</li>
-                        <li>JavaScript for interactivity and form validation</li>
-                        <li>Git for version control</li>
-                    </ul>
-                    <h3>Learning Outcomes:</h3>
-                    <p>By completing this project, you'll gain hands-on experience in front-end development, responsive design techniques, and creating a professional online presence. You'll also learn about web accessibility and performance optimization.</p>
-                </div>
-                <button class="view-more">View More</button>
-            </div>
-
-            <div class="project" data-category="frontend">
-                <h2>Responsive Portfolio Website</h2>
-                <div class="project-preview">
-                    <p>Create a responsive portfolio website using HTML, CSS, and JavaScript to showcase your skills and projects.</p>
-                </div>
-                <div class="project-full-content">
-                    <span class="close-content">&times;</span>
-                    <p>This project involves building a fully responsive portfolio website that adapts to various screen sizes. It will showcase your skills, projects, and provide a way for potential employers or clients to contact you.</p>
-                    <h3>Key Features:</h3>
-                    <ul>
-                        <li>Responsive layout using CSS Grid and Flexbox</li>
-                        <li>Interactive navigation menu</li>
-                        <li>Project showcase section with filtering capability</li>
-                        <li>Contact form with client-side validation</li>
-                        <li>Smooth scrolling and animations for enhanced UX</li>
-                    </ul>
-                    <h3>Technologies Used:</h3>
-                    <ul>
-                        <li>HTML5 for structure</li>
-                        <li>CSS3 for styling and responsiveness</li>
-                        <li>JavaScript for interactivity and form validation</li>
-                        <li>Git for version control</li>
-                    </ul>
-                    <h3>Learning Outcomes:</h3>
-                    <p>By completing this project, you'll gain hands-on experience in front-end development, responsive design techniques, and creating a professional online presence. You'll also learn about web accessibility and performance optimization.</p>
-                </div>
-                <button class="view-more">View More</button>
-            </div>
-
-
-
-
-
-
-
-
-
-
-    
-
-            <!-- Add more projects here -->
+        <div class="project" data-category="frontend">
+          <h2>Campus Resource Finder Real-World Problem </h2>
+          <div class="project-preview">
+            <p>Students waste time searching for campus resources across multiple platforms and often miss opportunities due to poor information accessibility.
+            .
+            </p>
+          </div>
+          <div class="project-full-content">
+            <span class="close-content">&times;</span>
+            <p>Students waste time searching for campus resources across multiple platforms and often miss opportunities due to poor information accessibility.
+            </p>
+            <h3>Learning Objectives:</h3>
+            <ul>
+              <li>Form handling and validation</li>
+              <li>Data filtering and search algorithms</li>
+              <li>Local storage implementation</li>
+              <li>Card-based UI design</li>
+            </ul>
+            <h3>Key Features</h3>
+            <ul>
+              <li> Title (required, max 50 characters)</li>
+              <li>Category dropdown (Study Spaces, Events, Lost & Found, Services, Other)</li>
+              <li>Description (required, max 200 characters)</li>
+              <li>Contact information (optional)</li>
+              <li>Date added (auto-generated)</li>
+            </ul>
+            <h3>Resource Display System </h3>
+            <ul>
+              <li>Card-based layout with consistent styling </li>
+              <li>Responsive grid (3 columns desktop, 2 tablet, 1 mobile)</li>
+              <li>Visual category indicators (icons or color coding)</li>
+              <li>Clear typography hierarchy</li>   
+            </ul>
+            <h3>Filtering & Search </h3>
+            <ul>
+              <li>Category filter buttons with active states</li>
+              <li>Real-time text search (title and description)</li>
+              <li>Clear all filters" functionality</li>
+              <li>Display results count</li> 
+            </ul>
+            <h3>Data Persistence</h3>
+            <ul>
+              <li>localStorage implementation</li>
+              <li>Data validation before saving</li>
+              <li>Error handling for storage limitations</li>  
+            </ul>
+            <h3>Advanced Features (if time permits):</h3>
+            <ul>
+              <li>Resource expiration dates</li>
+              <li>Favorite/bookmark functionality</li>
+              <li>Export to calendar (for events)</li>
+            </ul>
+            <h3>Technologies Used:</h3>
+            <ul>
+              <li>HTML5 for structure</li>
+              <li>CSS3 for styling and responsiveness</li>
+              <li>JavaScript for interactivity and form validation</li>
+              <li>Git for version control</li>
+            </ul>
+            <h3>Learning Outcomes:</h3>
+            <p>
+              By completing this project, you'll gain hands-on experience in
+              front-end development, responsive design techniques, and creating
+              a professional online presence. You'll also learn about web
+              accessibility and performance optimization.
+            </p>
+          </div>
+          <button class="view-more">View More</button>
         </div>
 
-        <a href="#submit-modal" id="submit-project" class="submit-btn">Submit Your Project</a>
+        <div class="project" data-category="frontend">
+          <h2>Personal Budget Tracker </h2>
+          <div class="project-preview">
+            <p>Real-World Problem: Young adults struggle with financial
+               literacy and often overspend due to lack of expense awareness and budgeting tools. 
+            </p>
+          </div>
+          <div class="project-full-content">
+            <span class="close-content">&times;</span>
+            <p>Real-World Problem: Young adults struggle with financial
+               literacy and often overspend due to lack of expense
+                awareness and budgeting tools.      
+            </p>
+            <h3>Learning Objectives: </h3>
+            <ul>
+              <li>Mathematical calculations in JavaScript</li>
+              <li>Data visualization without libraries</li>
+              <li>Form validation and error handling</li>
+              <li>Financial data formatting</li>
+            </ul>
+             <h3>Core Features:Expense Entry System  </h3>
+            <ul>
+              <li>Description field with suggestions</li>
+              <li>Amount input with currency formatting</li>
+              <li>Category selection (Food, Transport, Entertainment, Utilities, Other)</li>
+              <li>Date picker (defaults to today)</li>
+              <li>Form validation with helpful error messages</li>
+            </ul>
+            <h3>Expense Display </h3>
+            <ul>
+              <li>Clean table or card layout</li>
+              <li>Color-coded categories</li>
+              <li>Sorting options (date, amount, category)</li>
+              <li>Edit/delete functionality with confirmation</li>
+            </ul>
+            <h3>Budget Analysis </h3>
+            <ul>
+              <li>Running total calculation</li>
+              <li>Category breakdown (visual progress bars)</li>
+              <li>Daily/weekly/monthly views</li>
+              <li>Budget vs. actual spending indicators</li>
+            </ul>
+            <h3>Data Management</h3>
+            <ul>
+              <li>Persistent storage using localStorage</li>
+              <li>Data export functionality (CSV format)</li>
+              <li>Clear all data with confirmation</li>
+            </ul>
+            <h3>Advanced Features (if time permits): </h3>
+            <ul>
+              <li>Spending trends visualization</li>
+              <li>Budget goals and warnings</li>
+              <li>Receipt photo upload simulation</li>
+            </ul>
+            <h3>Technologies Used:</h3>
+            <ul>
+              <li>HTML5 for structure</li>
+              <li>CSS3 for styling and responsiveness</li>
+              <li>JavaScript for interactivity and form validation</li>
+              <li>Git for version control</li>
+            </ul>
+            <h3>Learning Outcomes:</h3>
+            <p>
+              By completing this project, you'll gain hands-on experience in
+              front-end development, responsive design techniques, and creating
+              a professional online presence. You'll also learn about web
+              accessibility and performance optimization.
+            </p>
+          </div>
+          <button class="view-more">View More</button>
+        </div>
+
+        <div class="project" data-category="frontend">
+          <h2>Responsive Portfolio Website</h2>
+          <div class="project-preview">
+            <p>
+              Create a responsive portfolio website using HTML, CSS, and
+              JavaScript to showcase your skills and projects.
+            </p>
+          </div>
+          <div class="project-full-content">
+            <span class="close-content">&times;</span>
+            <p>
+              This project involves building a fully responsive portfolio
+              website that adapts to various screen sizes. It will showcase your
+              skills, projects, and provide a way for potential employers or
+              clients to contact you.
+            </p>
+            <h3>Key Features:</h3>
+            <ul>
+              <li>Responsive layout using CSS Grid and Flexbox</li>
+              <li>Interactive navigation menu</li>
+              <li>Project showcase section with filtering capability</li>
+              <li>Contact form with client-side validation</li>
+              <li>Smooth scrolling and animations for enhanced UX</li>
+            </ul>
+            <h3>Technologies Used:</h3>
+            <ul>
+              <li>HTML5 for structure</li>
+              <li>CSS3 for styling and responsiveness</li>
+              <li>JavaScript for interactivity and form validation</li>
+              <li>Git for version control</li>
+            </ul>
+            <h3>Learning Outcomes:</h3>
+            <p>
+              By completing this project, you'll gain hands-on experience in
+              front-end development, responsive design techniques, and creating
+              a professional online presence. You'll also learn about web
+              accessibility and performance optimization.
+            </p>
+          </div>
+          <button class="view-more">View More</button>
+        </div>
+
+        <!-- Add more projects here -->
+      </div>
+
+      <a href="#submit-modal" id="submit-project" class="submit-btn"
+        >Submit Your Project</a
+      >
     </div>
 
     <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-description"></p>
-        </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+      </div>
     </div>
 
     <div id="submit-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Submit Your Project</h2>
-            <form id="submit-form">
-                <label for="project-title">Project Title:</label><br>
-                <input type="text" id="project-title" name="project-title" required><br>
-                <label for="project-description">Project Description:</label><br>
-                <textarea id="project-description" name="project-description" required></textarea><br>
-                <label for="project-url">Project URL:</label><br>
-                <input type="url" id="project-url" name="project-url" required><br>
-                <label for="project-category">Category:</label><br>
-                <select id="project-category" name="project-category" required>
-                    <option value="frontend">Frontend</option>
-                    <option value="backend">Backend</option>
-                </select><br>
-                <button type="submit">Send</button>
-            </form>
-        </div>
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Submit Your Project</h2>
+        <form id="submit-form">
+          <label for="project-title">Project Title:</label><br />
+          <input
+            type="text"
+            id="project-title"
+            name="project-title"
+            required
+          /><br />
+          <label for="project-description">Project Description:</label><br />
+          <textarea
+            id="project-description"
+            name="project-description"
+            required
+          ></textarea
+          ><br />
+          <label for="project-url">Project URL:</label><br />
+          <input
+            type="url"
+            id="project-url"
+            name="project-url"
+            required
+          /><br />
+          <label for="project-category">Category:</label><br />
+          <select id="project-category" name="project-category" required>
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option></select
+          ><br />
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </div>
 
     <script src="projects.js"></script>
 
     <footer>
-        <div class="container-22">
-            <div class="footer-content">
-                <h3>CONTACT US</h3>
-                <P>mrcollinswarah@gmail.com</P>
-                <p>collinswarah200@gmail.com</p>
-                <p>+237652868652</p>
-                <p>BAMEDA,CAMEROON</p>
-            </div>
-            <div  class="footer-content">
-                <h3>Quick Links</h3>
-                <ul class="list">
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="ebooks.html">EBOOKS</a></li>
-                    <li><a href="projects.html">PROJECTS</a></li>
-                    <li><a href="tutorial.html">TUTORIALS</a></li>
-                    <li><a href="roadmaps.html">ROADMAPS</a></li>
-                    <li><a href="login.html">COMMUNITY</a></li>
-                    <li><a href="contact.html">CONTACTS</a></li>
-                    <li><a href="contact.html">LINKS</a></li>
-                </ul>
-            </div>
-            <div class="footer-content">
-                <h3>FOLLOW US</h3>
-                <ul class="social-icons">
-                <li><a href="https://www.facebook.com/collins.warah "><i class='bx bxl-facebook' ></i></a></li>
-                <li><a href="https://wa.me/message/D6GD5Q5J5QIPB1 "><i class='bx bxl-whatsapp' ></i></a></li>
-                <li><a href="https://github.com/wara-collins"><i class='bx bxl-github' ></i></a></li>
-                <li><a href="https://www.linkedin.com/in/mr-collins-534b942b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><i class='bx bxl-linkedin-square'></i></a></li>
-                
-            </ul>
-            <img src="img/Untitled-12.jpg" alt="">
-
-            </div>
+      <div class="container-22">
+        <div class="footer-content">
+          <h3>CONTACT US</h3>
+          <p>mrcollinswarah@gmail.com</p>
+          <p>collinswarah200@gmail.com</p>
+          <p>+237652868652</p>
+          <p>BAMEDA,CAMEROON</p>
         </div>
-        <div class="bottom-bar">
-            <p>&COPY;2025 COLLINS WARAH .All rights reserveed</p>
+        <div class="footer-content">
+          <h3>Quick Links</h3>
+          <ul class="list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="ebooks.html">EBOOKS</a></li>
+            <li><a href="projects.html">PROJECTS</a></li>
+            <li><a href="tutorial.html">TUTORIALS</a></li>
+            <li><a href="roadmaps.html">ROADMAPS</a></li>
+            <li><a href="login.html">COMMUNITY</a></li>
+            <li><a href="contact.html">CONTACTS</a></li>
+            <li><a href="contact.html">LINKS</a></li>
+          </ul>
         </div>
-      </footer>
-
-
-</body>
+        <div class="footer-content">
+          <h3>FOLLOW US</h3>
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.facebook.com/collins.warah "
+                ><i class="bx bxl-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://wa.me/message/D6GD5Q5J5QIPB1 "
+                ><i class="bx bxl-whatsapp"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/wara-collins"
+                ><i class="bx bxl-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/mr-collins-534b942b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
+                ><i class="bx bxl-linkedin-square"></i
+              ></a>
+            </li>
+          </ul>
+          <img src="img/Untitled-12.jpg" alt="" />
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <p>&COPY;2025 COLLINS WARAH .All rights reserveed</p>
+      </div>
+    </footer>
+  </body>
 </html>

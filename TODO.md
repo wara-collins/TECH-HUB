@@ -1,0 +1,3 @@
+- [ ] Edit style.css to set flex-wrap: nowrap for .front class
+- [ ] Edit index.html to remove extra .component-1 divs in front-end section (keep first 4)
+- [ ] Edit index.html to remove extra .component-1 divs in back-end section (keep first 4)
