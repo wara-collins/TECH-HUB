@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links - TECH HUB</title>
+    <link rel="stylesheet" href="links.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><img src="img/Untitled-6.png" height="80px" width="100px" alt=""></a>
+
+        <nav class="navbar">
+            <a href="index.html">HOME</a>
+            
+            <div class="dropdown">
+                <a href="#" class="dropbtn">START LEARNING <i class='bx bx-chevron-down'></i></a>
+                <div class="dropdown-content">
+                    <a href="projects.html">PROJECT</a>
+                    <a href="roadmaps.html">ROADMAPS</a>
+                    <a href="tutorial.html">TUTORIALS</a>
+                    <a href="ebooks.html">EBOOKS</a>
+                    <a href="links.html">LINKS</a>
+                </div>
+            </div>
+            <a href="login.html" class="button">COMMUNITY</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
+    </header>
+
+    <section class="links-section">
+        <h1>Share Useful Links</h1>
+        <p>Share and discover helpful resources, tutorials, articles, and tools for learning and development.</p>
+
+        <div class="form-container">
+            <h2>Submit a Link</h2>
+            <form id="link-form">
+                <div class="form-group">
+                    <label for="link-url">Link URL:</label>
+                    <input type="url" id="link-url" name="link-url" required placeholder="https://example.com">
+                </div>
+                <div class="form-group">
+                    <label for="link-title">Title:</label>
+                    <input type="text" id="link-title" name="link-title" required placeholder="Link title">
+                </div>
+                <div class="form-group">
+                    <label for="link-description">Description:</label>
+                    <textarea id="link-description" name="link-description" required placeholder="Brief description of the link"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="link-category">Category:</label>
+                    <select id="link-category" name="link-category" required>
+                        <option value="tutorial">Tutorial</option>
+                        <option value="tool">Tool</option>
+                        <option value="article">Article</option>
+                        <option value="course">Course</option>
+                        <option value="resource">Resource</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="submit-btn">Submit Link</button>
+            </form>
+        </div>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="tutorial">Tutorials</button>
+            <button class="filter-btn" data-category="tool">Tools</button>
+            <button class="filter-btn" data-category="article">Articles</button>
+            <button class="filter-btn" data-category="course">Courses</button>
+            <button class="filter-btn" data-category="resource">Resources</button>
+            <button class="filter-btn" data-category="other">Other</button>
+        </div>
+
+        <div id="links-container">
+            <!-- Links will be displayed here -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <h3>CONTACT US</h3>
+                <P>mrcollinswarah@gmail.com</P>
+                <p>collinswarah200@gmail.com</p>
+                <p>+237652868652</p>
+                <p>BAMEDA,CAMEROON</p>
+            </div>
+            <div class="footer-content">
+                <h3>Quick Links</h3>
+                <ul class="list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="ebooks.html">EBOOKS</a></li>
+                    <li><a href="projects.html">PROJECTS</a></li>
+                    <li><a href="tutorial.html">TUTORIALS</a></li>
+                    <li><a href="roadmaps.html">ROADMAPS</a></li>
+                    <li><a href="links.html">LINKS</a></li>
+                    <li><a href="login.html">COMMUNITY</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>FOLLOW US</h3>
+                <ul class="social-icons">
+                <li><a href="https://www.facebook.com/collins.warah"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="https://wa.me/message/D6GD5Q5J5QIPB1 "><i class='bx bxl-whatsapp' ></i></a></li>
+                <li><a href="https://github.com/wara-collins"><i class='bx bxl-github' ></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mr-collins-534b942b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin-square'></i></a></li>
+                
+            </ul>
+            <img src="img/Untitled-12.jpg" alt="">
+
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>&COPY;2025 COLLINS WARAH .All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="links.js"></script>
+</body>
+</html>

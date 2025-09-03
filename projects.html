@@ -28,6 +28,7 @@
             <a href="roadmaps.html">ROADMAPS</a>
             <a href="tutorial.html">TUTORIALS</a>
             <a href="ebooks.html">EBOOKS</a>
+            <a href="links.html">LINKS</a>
           </div>
         </div>
         <a href="login.html">COMMUNIYTY</a>
@@ -272,6 +273,313 @@
           <button class="view-more">View More</button>
         </div>
 
+
+         <div class="project" data-category="backend">
+          <h2>To-Do List API </h2>
+          <div class="project-preview">
+            <p>A To-Do List API allows users to manage tasks through basic HTTP requests, 
+              like adding a task, marking it done, or deleting it. You can build it using Node.js and 
+              Express, storing tasks in memory or a lightweight database like SQLite.This project 
+              introduces you to how APIs work in real apps, and you can even test it with tools like Postman. 
+            </p>
+          </div>
+          <div class="project-full-content">
+            <span class="close-content">&times;</span>
+            <p> A To-Do List API allows users to manage tasks through basic HTTP requests, like 
+              adding a task, marking it done, or deleting it. You can build it using Node.js and 
+              Express, storing tasks in memory or a lightweight database like SQLite.This project 
+              introduces you to how APIs work in real apps, and you can even test it with tools like Postman.     
+            </p>
+            <h3>SKILLS REQUIRED </h3>
+            <ul>
+              <li>Basics of RESTful API design.</li>
+              <li>Handling HTTP methods (GET, POST, PUT, DELETE).</li>
+              <li>Using Express.js for routing.</li>
+              <li>Simple data storage and retrieval.</li>
+            </ul>
+             <h3> Project Setup</h3>
+            <ul>
+              <li> Initialize your project with npm init -y.</li>
+              <li>Install Express and any dependencies needed.</li>
+              <li> Create folders like routes, controllers, and models.</li>
+              <li>Use environment variables for sensitive info.</li>
+              
+            </ul>
+            <h3> Creating Task Model</h3>
+            <ul>
+              <li>Define the structure of a task (title, description, status).</li>
+              <li>Use a simple JS object or a schema if using MongoDB.</li>
+              <li>Include fields like createdAt and completed.</li>
+              <li>Use defaults for optional fields.</li>
+            </ul>
+            <h3>Routing Structure </h3>
+            <ul>
+              <li>Create routes for CRUD operations. </li>
+              <li>Group task-related routes in taskRoutes.js.  </li>
+              <li>Import routes into your main app.js.</li>
+              <li> Use route prefixes like /api/tasks.</li>
+            </ul>
+            <h3>Creating Controllers</h3>
+            <ul>
+              <li>Separate logic from routes using controllers.</li>
+              <li>Each controller handles one task (add, update, delete).</li>
+              <li> Export functions and import them in your routes.</li>
+              <li> Keep controllers short and focused.</li>
+            </ul>
+            <h3>Error Handling</h3>
+            <ul>
+              <li>Wrap controllers in try/catch blocks.</li>
+              <li> Send appropriate HTTP status codes.</li>
+              <li> Log errors for debugging</li>
+              <li> Avoid exposing internal errors to the user.</li>
+            </ul>
+            <h3>CRUD Operations</h3>
+            <ul>
+              <li>Use POST to add new tasks.</li>
+              <li> Use GET to fetch all or one task.</li>
+              <li>Use PUT to update a task by ID.  </li>
+              <li>Use DELETE to remove a task.</li>
+            </ul>
+             <h3>Testing the API</h3>
+            <ul>
+
+              <li>Use Postman or Thunder Client to test each route.</li>
+              <li>Test valid and invalid scenarios. </li>
+              <li> Make sure data updates reflect correctly.</li>
+              <li>Check responses and status codes. </li>
+              
+            </ul>
+            <h3>Learning Outcomes:</h3>
+            <p>
+              By completing this project, you'll gain hands-on experience in
+              back-end development, API design principles, and creating
+              a professional online presence. You'll also learn about web
+              accessibility and performance optimization.
+            </p>
+          </div>
+          <button class="view-more">View More</button>
+        </div>
+
+         <div class="project" data-category="backend">
+          <h2>Build Blog Post API </h2>
+          <div class="project-preview">
+            <p>This task involves creating a Blog Post API that allows users to create, read, 
+              update, and delete blog posts.It should handle requests through RESTful routes using
+               Node.js and Express.Posts can include a title, body, author, date, and tags.Ensure clean structure, validation, and proper documentation.</p>       
+          </div>
+            <span class="close-content">&times;</span>
+            <p>This task involves creating a Blog Post API that allows users to create, read, 
+              update, and delete blog posts.It should handle requests through RESTful routes using Node.js and Express. Posts can include a title, body, author, date, and tags.Ensure clean structure, validation, and proper documentation.
+
+     
+            </p>
+            <h3>Learning Objectives: </h3>
+            <ul>
+              <li>Mathematical calculations in JavaScript</li>
+              <li>Data visualization without libraries</li>
+              <li>Form validation and error handling</li>
+              <li>Financial data formatting</li>
+            </ul>
+             <h3>Core Features:Expense Entry System  </h3>
+            <ul>
+              <li>Description field with suggestions</li>
+              <li>Amount input with currency formatting</li>
+              <li>Category selection (Food, Transport, Entertainment, Utilities, Other)</li>
+              <li>Date picker (defaults to today)</li>
+              <li>Form validation with helpful error messages</li>
+            </ul>
+            <h3>Expense Display </h3>
+            <ul>
+              <li>Clean table or card layout</li>
+              <li>Color-coded categories</li>
+              <li>Sorting options (date, amount, category)</li>
+              <li>Edit/delete functionality with confirmation</li>
+            </ul>
+            <h3>Budget Analysis </h3>
+            <ul>
+              <li>Running total calculation</li>
+              <li>Category breakdown (visual progress bars)</li>
+              <li>Daily/weekly/monthly views</li>
+              <li>Budget vs. actual spending indicators</li>
+            </ul>
+            <h3>Data Management</h3>
+            <ul>
+              <li>Persistent storage using localStorage</li>
+              <li>Data export functionality (CSV format)</li>
+              <li>Clear all data with confirmation</li>
+            </ul>
+            <h3>Advanced Features (if time permits): </h3>
+            <ul>
+              <li>Spending trends visualization</li>
+              <li>Budget goals and warnings</li>
+              <li>Receipt photo upload simulation</li>
+            </ul>
+            <h3>Technologies Used:</h3>
+            <ul>
+              <li>HTML5 for structure</li>
+              <li>CSS3 for styling and responsiveness</li>
+              <li>JavaScript for interactivity and form validation</li>
+              <li>Git for version control</li>
+            </ul>
+            <h3>Learning Outcomes:</h3>
+            <p>
+              By completing this project, you'll gain hands-on experience in
+              front-end development, responsive design techniques, and creating
+              a professional online presence. You'll also learn about web
+              accessibility and performance optimization.
+            </p>
+          </div>
+          <button class="view-more">View More</button>
+        </div>
+
+
+         <div class="project" data-category="frontend">
+          <h2>Personal Budget Tracker </h2>
+          <div class="project-preview">
+            <p>Real-World Problem: Young adults struggle with financial
+               literacy and often overspend due to lack of expense awareness and budgeting tools. 
+            </p>
+          </div>
+          <div class="project-full-content">
+            <span class="close-content">&times;</span>
+            <p>Real-World Problem: Young adults struggle with financial
+               literacy and often overspend due to lack of expense
+                awareness and budgeting tools.      
+            </p>
+            <h3>Learning Objectives: </h3>
+            <ul>
+              <li>Mathematical calculations in JavaScript</li>
+              <li>Data visualization without libraries</li>
+              <li>Form validation and error handling</li>
+              <li>Financial data formatting</li>
+            </ul>
+             <h3>Core Features:Expense Entry System  </h3>
+            <ul>
+              <li>Description field with suggestions</li>
+              <li>Amount input with currency formatting</li>
+              <li>Category selection (Food, Transport, Entertainment, Utilities, Other)</li>
+              <li>Date picker (defaults to today)</li>
+              <li>Form validation with helpful error messages</li>
+            </ul>
+            <h3>Expense Display </h3>
+            <ul>
+              <li>Clean table or card layout</li>
+              <li>Color-coded categories</li>
+              <li>Sorting options (date, amount, category)</li>
+              <li>Edit/delete functionality with confirmation</li>
+            </ul>
+            <h3>Budget Analysis </h3>
+            <ul>
+              <li>Running total calculation</li>
+              <li>Category breakdown (visual progress bars)</li>
+              <li>Daily/weekly/monthly views</li>
+              <li>Budget vs. actual spending indicators</li>
+            </ul>
+            <h3>Data Management</h3>
+            <ul>
+              <li>Persistent storage using localStorage</li>
+              <li>Data export functionality (CSV format)</li>
+              <li>Clear all data with confirmation</li>
+            </ul>
+            <h3>Advanced Features (if time permits): </h3>
+            <ul>
+              <li>Spending trends visualization</li>
+              <li>Budget goals and warnings</li>
+              <li>Receipt photo upload simulation</li>
+            </ul>
+            <h3>Technologies Used:</h3>
+            <ul>
+              <li>HTML5 for structure</li>
+              <li>CSS3 for styling and responsiveness</li>
+              <li>JavaScript for interactivity and form validation</li>
+              <li>Git for version control</li>
+            </ul>
+            <h3>Learning Outcomes:</h3>
+            <p>
+              By completing this project, you'll gain hands-on experience in
+              front-end development, responsive design techniques, and creating
+              a professional online presence. You'll also learn about web
+              accessibility and performance optimization.
+            </p>
+          </div>
+          <button class="view-more">View More</button>
+        </div>
+
+
+         <div class="project" data-category="frontend">
+          <h2>Personal Budget Tracker </h2>
+          <div class="project-preview">
+            <p>Real-World Problem: Young adults struggle with financial
+               literacy and often overspend due to lack of expense awareness and budgeting tools. 
+            </p>
+          </div>
+          <div class="project-full-content">
+            <span class="close-content">&times;</span>
+            <p>Real-World Problem: Young adults struggle with financial
+               literacy and often overspend due to lack of expense
+                awareness and budgeting tools.      
+            </p>
+            <h3>Learning Objectives: </h3>
+            <ul>
+              <li>Mathematical calculations in JavaScript</li>
+              <li>Data visualization without libraries</li>
+              <li>Form validation and error handling</li>
+              <li>Financial data formatting</li>
+            </ul>
+             <h3>Core Features:Expense Entry System  </h3>
+            <ul>
+              <li>Description field with suggestions</li>
+              <li>Amount input with currency formatting</li>
+              <li>Category selection (Food, Transport, Entertainment, Utilities, Other)</li>
+              <li>Date picker (defaults to today)</li>
+              <li>Form validation with helpful error messages</li>
+            </ul>
+            <h3>Expense Display </h3>
+            <ul>
+              <li>Clean table or card layout</li>
+              <li>Color-coded categories</li>
+              <li>Sorting options (date, amount, category)</li>
+              <li>Edit/delete functionality with confirmation</li>
+            </ul>
+            <h3>Budget Analysis </h3>
+            <ul>
+              <li>Running total calculation</li>
+              <li>Category breakdown (visual progress bars)</li>
+              <li>Daily/weekly/monthly views</li>
+              <li>Budget vs. actual spending indicators</li>
+            </ul>
+            <h3>Data Management</h3>
+            <ul>
+              <li>Persistent storage using localStorage</li>
+              <li>Data export functionality (CSV format)</li>
+              <li>Clear all data with confirmation</li>
+            </ul>
+            <h3>Advanced Features (if time permits): </h3>
+            <ul>
+              <li>Spending trends visualization</li>
+              <li>Budget goals and warnings</li>
+              <li>Receipt photo upload simulation</li>
+            </ul>
+            <h3>Technologies Used:</h3>
+            <ul>
+              <li>HTML5 for structure</li>
+              <li>CSS3 for styling and responsiveness</li>
+              <li>JavaScript for interactivity and form validation</li>
+              <li>Git for version control</li>
+            </ul>
+            <h3>Learning Outcomes:</h3>
+            <p>
+              By completing this project, you'll gain hands-on experience in
+              front-end development, responsive design techniques, and creating
+              a professional online presence. You'll also learn about web
+              accessibility and performance optimization.
+            </p>
+          </div>
+          <button class="view-more">View More</button>
+        </div>
+
+
+
         <!-- Add more projects here -->
       </div>
 
@@ -342,10 +650,11 @@
             <li><a href="ebooks.html">EBOOKS</a></li>
             <li><a href="projects.html">PROJECTS</a></li>
             <li><a href="tutorial.html">TUTORIALS</a></li>
-            <li><a href="roadmaps.html">ROADMAPS</a></li>
-            <li><a href="login.html">COMMUNITY</a></li>
             <li><a href="contact.html">CONTACTS</a></li>
             <li><a href="contact.html">LINKS</a></li>
+            <li><a href="roadmaps.html">ROADMAPS</a></li>
+            <li><a href="login.html">COMMUNITY</a></li>
+            
           </ul>
         </div>
         <div class="footer-content">
