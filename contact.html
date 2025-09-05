@@ -66,18 +66,18 @@
     <section class="contact-form-section">
         <div class="form-container">
             <h2>Send us a Message</h2>
-            <form class="contact-form">
+            <form class="contact-form" action="https://formsubmit.co/mrcollinswarah@gmail.com" method="POST">
                 <div class="form-group">
-                    <input type="text" placeholder="Your Name" required>
+                    <input type="text" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group">
-                    <input type="email" placeholder="Your Email" required>
-                </div>  
-                <div class="form-group">
-                    <input type="text" placeholder="Subject" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-group">
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                 </div>
                 <button type="submit" class="submit-btn">Send Message</button>
             </form>

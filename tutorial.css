@@ -125,6 +125,29 @@ margin-top: 900px;
 .dropdown:hover .dropbtn {
     color: royalblue;
 }
+#intro-section {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #081b29;
+  margin-top: 100px;
+  text-align: center;
+}
+
+#intro-section h2 {
+  color: #E5E5E5;
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+#intro-section p {
+  color: #cccccc;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 #video-section {
   margin: 0 auto;
   padding: 20px;
@@ -136,16 +159,7 @@ margin-top: 900px;
   margin-bottom: 70px;
 
 }
-#video-section h2{
-    color: #E5E5E5;
-    font-size: 60px;
-    font-weight: 700;
-    padding-top: 100px;
-    margin-left: 100px;
-    font-style: italic;
-    max-width: 100%;
-    
-}
+
 
 #video-section img{
     height:600px;
