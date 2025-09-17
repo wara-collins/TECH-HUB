@@ -1,0 +1,162 @@
+/* Import general styles */
+@import url('style.css');
+
+/* Hero Section */
+.hero {
+  background-image: url(img/Coding.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10%;
+  margin-top: 100px;
+}
+
+.hero-content h1 {
+  color: #E5E5E5;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  color: #E5E5E5;
+  font-size: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Events Section */
+.events-section {
+  padding: 80px 10%;
+  background: #001722;
+}
+
+.events-section h2 {
+  color: #E5E5E5;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.events-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 4px;
+  background: royalblue;
+}
+
+.events-container {
+  display: flex;
+  gap: 30px;
+
+  
+}
+
+.event-card {
+  background: linear-gradient(135deg, #081b29, #0f1419);
+  border-radius: 15px;
+  padding: 25px;
+  width: 350px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.event-card h3 {
+  color: royalblue;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  color: #E5E5E5;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.event-card p strong {
+  color: #00abf0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 5%;
+    min-height: 40vh;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+  }
+
+  .events-section {
+    padding: 60px 5%;
+  }
+
+  .events-section h2 {
+    font-size: 32px;
+  }
+
+  .events-container {
+    gap: 20px;
+  }
+
+  .event-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .events-section h2 {
+    font-size: 28px;
+  }
+
+  .event-card {
+    padding: 20px;
+  }
+
+  .event-card h3 {
+    font-size: 20px;
+  }
+
+  .event-card p {
+    font-size: 14px;
+  }
+}
