@@ -3,9 +3,7 @@
 
 /* Hero Section */
 .hero {
-  background-image: url(img/Coding.png);
-  background-size: cover;
-  background-position: center;
+  
   min-height: 50vh;
   display: flex;
   align-items: center;
@@ -23,10 +21,12 @@
 }
 
 .hero-content p {
-  color: #E5E5E5;
-  font-size: 20px;
+  color: royalblue;
+  font-size: 25px;
   max-width: 600px;
   margin: 0 auto;
+  
+
 }
 
 /* Events Section */
